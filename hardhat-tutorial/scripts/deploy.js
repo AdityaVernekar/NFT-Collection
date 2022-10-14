@@ -13,6 +13,8 @@ async function main() {
   */
   const cryptoDevsContract = await ethers.getContractFactory("CryptoDevs");
 
+  console.log(metadataURL, whitelistContract);
+
   // deploy the contract
   const deployedCryptoDevsContract = await cryptoDevsContract.deploy(
     metadataURL,

@@ -4,6 +4,8 @@ require("dotenv").config({ path: ".env" });
 const QUICKNODE_HTTP_URL = process.env.QUICKNODE_HTTP_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
+console.log(QUICKNODE_HTTP_URL, PRIVATE_KEY, "keys");
+
 module.exports = {
   solidity: "0.8.4",
   networks: {
